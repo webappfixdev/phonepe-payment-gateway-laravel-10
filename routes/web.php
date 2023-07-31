@@ -21,3 +21,6 @@ Route::get('/', function () {
 Route::get('phonepe',[PhonePeController::class,'phonePe']);
 
 Route::any('phonepe-response',[PhonePeController::class,'response'])->name('response');
+
+
+Route::get('refund/{id}',[PhonePecontroller::class,'refundProcess']);
